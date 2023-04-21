@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title>Games Selection</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<div class="bg">
+			<Header id="header">
+				<h1 id="site-name"><a href="#">Game Recommendation</a></h1>
+			</Header>
+			<main id="slideshow">
+				<div class="slideshow-container">
+					<div class="slideshow-box">
+				  		<div class="slideshow-image">
+							<img class="ss-img1" src="images/skulls_n_bones.jpg" alt="Old wooden pirate ships sailing in sea">
+							<!--https://www.wallpaperflare.com/skull-and-bones-2018-video-game-brown-pirate-ship-illustration-wallpaper-pobts-->
+				  		</div>
+				  		<div class="slideshow-image">
+							<img class="ss-img2" src="images/far_cry.jpg" alt="far cry 6 character on a street holding a torch and gun ">
+							<!--https://www.wallpaperflare.com/far-cry-6-stranger-things-video-games-women-fire-storm-wallpaper-ygtef-->
+				  		</div>
+				  		<div class="slideshow-image">
+							<img class="ss-img4" src="images/Tom_Clancy_screenshot_2.jpg" alt="Tom clancy game character watching from top of hill">
+							<!--https://www.wallpaperflare.com/tom-clancy-s-bolivia-chopper-weapon-gun-landscape-commando-wallpaper-cutrh-->
+				  		</div>
+				  		<div class="slideshow-image">
+							<img class="ss-img1" src="images/syndicate.jpg" alt="man in black suit holding cane and sitting on a chair">
+							<!--https://www.wallpaperflare.com/man-in-black-suit-holding-cane-digital-wallpaper-assassin-s-creed-poster-wallpaper-mdo-->
+				  		</div>
+				  		<div class="slideshow-image">
+							<img class="ss-img2" src="images/tomb_raider.jpg" alt="lara croft sitting on a tree branch with knife in her hand">
+							<!--https://www.wallpaperflare.com/shadow-of-the-tomb-raider-2018-puzzle-video-game-lara-croft-tomb-raider-digital-wallpaper-wallpaper-pogrp-->
+				  		</div>
+				  		<div class="slideshow-image">
+							<img class="ss-img3" src="images/witcher_horse.jpg" alt="Witcher game main character riding a horse going towards a castle">
+							<!--https://www.wallpaperflare.com/warrior-horse-painting-sky-aenami-video-games-the-witcher-wallpaper-gqqgg-->
+				  		</div>
+					</div>
+				</div>
+			</main>
+			<section id="forms">
+				<div>
+					<h2 class="slogan">"Wanna play games but confused which one, Don't worry just select the genre and setup below"</h2>
+				</div>
+				<form name="gameForm" action="#" method="POST">
+					<div class="input-container">
+						<div class="dd">
+							<label for="first_Choice">Choose Choice of Genre</label>
+							<div>
+								<select name="genre_Choice" id="first_Choice">
+									<option value="X">CHOOSE ONE</option>
+									<option value="AA">Action-Adventure</option>
+									<option value="RPG">Role-playing</option>
+									<option value="TPS">Third-Person Shooter</option>
+								</select>
+							</div>
+						</div>
+						<div class="dd">
+							<label for="second_Choice"> Choose Choice of Setup</label>
+							<div>
+								<select name="setup_Choice" id="setup_Select">
+									<option value="X">CHOOSE ONE</option>
+									<option value="JUN">Jungle</option>
+									<option value="OPEN">Open World</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div id="btn">
+						<input type="submit" value="Submit Your Selection">
+					</div>
+				</form>
+			</section>
+		</div>
+		<!-- OUTPUT MESSAGE SECTION -->
+		<div id="aajun">
+			<main id="main-aajun">
+				<div class="tomb-heading"><h3>Shadow of The Tomb Raider</h3></div>
+				
+				<div class="lara-main">
+					<img src="images/tomb_raider_screenshot_1.jpg" class="lara-img-main" alt="lara croft sitting on a tree branch with knife in her hand">
+					<!--https://www.wallpaperflare.com/shadow-of-the-tomb-raider-2018-puzzle-video-game-lara-croft-tomb-raider-digital-wallpaper-wallpaper-pogrp-->
+				</div>
+				<div class="tomb-bio">
+					<p>As Lara Croft races to save the world from a Maya apocalypse, she must become the Tomb Raider she is destined to be.</p>
+				</div>
+				<div id="result-tomb">
+					<div><h4>*  <span id="result__genreName"></span></h4></div>
+					<div><h4>*  <span id="result__setupName"></span></h4></div>
+				</div>
+			</main>
+			<button id="reloadBtn-tomb" class="reloadBtn"><span class="text">Choose Again</span></button>
+			<div class="flex-container-buy-tomb">
+				<section class="img-lara">
+					<img src="images/tomb_raider_screenshot_2.jpg" class="lara_croft-img" alt="lara croft watching a monkey while going toward a old ruin">
+					<!--https://www.wallpaperflare.com/lara-croft-shadow-of-the-tomb-raider-wallpaper-grmtp-->
+				</section>
+				<aside class="buy-now-tomb">
+					<h5>Buy Now</h5>
+					<p>Shadow of the Tomb Raider is available to Buy on the following digital stores:</p>
+					<ul>
+						<li><a href="https://store.playstation.com/en-ca/product/UP0082-CUSA10938_00-DEFINITIVE00SIEA/">Play Station 4</a></li>
+						<li><a href="https://www.xbox.com/en-US/games/store/shadow-of-the-tomb-raider-definitive-edition/BNQQ3WVBNZCQ">Xbox One</a></li>
+						<li><a href="https://store.steampowered.com/app/750920/Shadow_of_the_Tomb_Raider_Definitive_Edition/">Steam</a></li>
+					</ul>
+				</aside>
+			</div>
+			<section class="become-tomb">
+				<h2>BECOME THE TOMB RAIDER</h2>
+			</section>
+			<section class="tomb-vid">
+				<iframe class="aajun-vid" src="https://www.youtube.com/embed/rtlh3OmGMXs?start=11&autoplay=1&mute=1" title="YouTube video player" frameborder="10" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+				</iframe>
+			</section>
+			<section class="list-disc-tomb">
+				<ul>
+					<li>
+						<h3>Survive and Thrive in the Deadliest Place on Earth</h3>
+						<p>
+								Master an unforgiving jungle setting in order to survive. Explore underwater environments filled with crevasses and deep tunnel systems.
+						</p>
+					</li>
+					<li>
+						<h3>Become One with the Jungle</h3>
+						<p>
+							Outgunned and outnumbered, Lara must use the jungle to her advantage. Strike suddenly and disappear like a jaguar, use mud as camouflage, and instill fear in enemies to sow chaos.
+						</p>
+					</li>
+					<li>
+						<h3>Discover Dark and Brutal Tombs</h3>
+						<p>
+							Tombs are more terrifying than ever before, requiring advanced traversal techniques to reach them, and once inside they are filled with deadly puzzles.
+						</p>
+					</li>
+					<li>
+						<h3>Uncover Living History</h3>
+						<p>
+							Discover a hidden city and explore the biggest hub space ever found in a Tomb Raider game.
+						</p>
+					</li>
+				</ul>
+			</section>
+			<section>
+				<div id="screenShow">
+					<img id="mainImg-tomb" src="images/tomb_raider_screenshot_3.jpg" alt="Lara croft going out from a tunnel into dense vegetation">
+					<!--https://www.wallpaperflare.com/video-games-shadow-of-the-tomb-raider-screen-shot-landscape-wallpaper-pquxy-->
+				</div>
+			</section>
+					<!--THUMBNAIL GALLERY-->
+			<section class="gallery-container">
+				<div id="gallery">
+					<div class="footimg">
+						<img id="pic1-tomb" class="foot-pics" src="images/tomb_raider_screenshot_4.jpg" alt="Lara croft facing a tiger while having bow and arrow in han ready to attack">
+						<!--https://www.wallpaperflare.com/game-jungle-lara-croft-beast-shadow-of-the-tomb-raider-wallpaper-uwlmf-->
+					</div>
+					<div class="footimg">
+						<img id="pic2-tomb" class="foot-pics" src="images/tomb_raider_screenshot_5.jpg" alt="Lara croft exploring old ruins">
+						<!--https://www.wallpaperflare.com/screenshot-4k-shadow-of-the-tomb-raider-lara-croft-wallpaper-uhits-->
+					</div>
+					<div class="footimg">
+						<img id="pic3-tomb" class="foot-pics" src="images/tomb_raider_screenshot_6.jpg" alt="Lara croft exploring old ruin while swinging on a rope">
+						<!--https://eidos.nyc3.digitaloceanspaces.com/onlinedev-eidosmontrealsite-prod/2018/09/shadow_of_the_tomb_raider_screenshot_02-1120x630.jpg-->
+					</div>
+					<div class="footimg">
+						<img id="pic4-tomb" class="foot-pics" src="images/tomb_raider_screenshot_7.jpg" alt="Lara croft exploring some areas and examining images on the wall">
+						<!--https://www.wallpaperflare.com/lara-croft-shadow-of-the-tomb-raider-video-games-text-communication-wallpaper-ccpeh-->
+					</div>
+					<div class="footimg">
+						<img id="pic5-tomb" class="foot-pics" src="images/tomb_raider_screenshot_8.jpg" alt="lara croft face away watching something in jungle">
+						<!--https://www.wallpaperflare.com/lara-croft-shadow-of-the-tomb-raider-playstation-4-video-games-wallpaper-ccrpi-->
+					</div>
+					<div class="footimg">
+						<img id="pic6-tomb" class="foot-pics" src="images/tomb_raider_screenshot_9.jpg" alt="lara croft passing by a street">
+						<!--https://www.wallpaperflare.com/shadow-of-the-tomb-raider-tomb-raider-2018-video-games-concept-art-wallpaper-mlnji-->
+					</div>
+				</div>
+			</section>
+			<section class="footer-tomb">
+				<h2>Developed by: </h2>
+				<img src="images/tomb_logo.png" class="tomb-foot-logo" alt="developer logo">
+			</section>
+			<div id="copyright">
+				© Copyright Prabhjot Singh Sains, 2023.
+			</div>
+		</div>
+		<div id="aaopen">
+			<main id="main-aaopen">
+				<div class="aco-heading"><h3>Assassin's Creed: Origins</h3></div>
+				
+				<div class="byek-main">
+					<img src="images/AC_origins_screenshot_1.jpg" class="byek-img-main" alt="Game main character in foreground and pyramids in background">
+					<!--https://www.wallpaperflare.com/assassin-s-creed-wallpaper-pyramid-video-games-fan-art-assassin-s-creed-origins-wallpaper-hvofo-->
+				</div>
+
+				<div class="aco-bio">
+					<p>Set in mysterious Ancient Egypt. Experience a new way to fight while exploring the Great Pyramids and hidden tombs, and encounter many memorable storylines along your journey. And discover the origin story of the Assassin’s Brotherhood.</p>
+				</div>
+				<div id="resultaco">
+					<div>
+						<div><h4>*  <span id="result__genreNameac"></span></h4></div>
+						<div><h4>*  <span id="result__setupNameac"></span></h4></div>
+					</div>
+				</div>
+				
+			</main>
+			<button id="reloadBtn-aco" class="reloadBtn"><span class="text">Choose Again</span></button>
+			<div class="flex-container-buy-origins">
+				<section class="img-byekback">
+					<img src="images/AC_origins_screenshot_2.jpg" class="byek_back-img" alt="Assassin’s creed origin town scene">
+					<!--https://www.wallpaperflare.com/video-games-desert-ultrawide-ultra-wide-assassin-s-creed-origins-wallpaper-cmcar-->
+				</section>
+				<aside class="buy-now-origins">
+					<h5>Buy Now</h5>
+					<p>Assassins's Creed: origins is available to Buy on the following digital stores:</p>
+					<ul>
+						<li>Play Station 4</li>
+						<li>Xbox One</li>
+						<li>PC - UPlay+</li>
+						<li>PC - Ubisoft Store</li>
+						<li>PC - Epic Games Store</li>
+					</ul>
+				</aside>
+			</div>
+			<section class="origins">
+				<h2>Ancient Egypt, a land of majesty and intrigue, is disappearing in a ruthless fight for power. Unveil dark secrets and forgotten myths as you go back to the one founding moment: The Origins of the Assassin’s Brotherhood.</h2>
+			</section>
+			<section class="origins-vid">
+				<iframe class="aaopen-vid" src="https://www.youtube.com/embed/cUuKIpCM2o0?start=6&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				</iframe>
+			</section>
+			<section class="list-disc-origins">
+				<ul>
+					<li>
+						<h3>A Full Country to Discover</h3>
+						<p>
+							From deserts to lush oases, from the Mediterranean Sea to the tombs of Giza, fight your way against dangerous ancient factions and wild beasts as you explore this gigantic and unpredictable land.
+						</p>
+					</li>
+					<li>
+						<h3>Rebuilt Combat</h3>
+						<p>
+							Experience a completely new way to fight. Loot and use dozens of weapons with different characteristics and rarities. Explore deep progression mechanics and challenge your skills against unique and powerful bosses.
+						</p>
+					</li>
+					<li>
+						<h3>Memorable Quests</h3>
+						<p>
+							Dive into a new adventure every time you play, with each quest telling an intense, emotional, and memorable story.
+						</p>
+					</li>
+					<li>
+						<h3>Story & Characters</h3>
+						<p>
+							Egypt is faltering under the rule of inexperienced monarchs. It’s a time for the silver-tongued to attempt to take control, and for the Assassin’s Brotherhood to emerge and ensure that doesn’t happen.
+						</p>
+					</li>
+					<li>
+						<h3>A New Story Every Time You Play</h3>
+						<p>
+							Engage into multiple quests and gripping stories as you cross paths with strong and memorable characters, from the wealthiest high-born to the most desperate outcasts.
+						</p>
+					</li>
+				</ul>
+			</section>
+			<section>
+				<div id="screenShow">
+					<img id="mainImg-origins" src="images/AC_origins_screenshot_3.jpg" alt="Assassin creed hand blade and sword">
+					<!--https://www.wallpaperflare.com/assassin-s-creed-jacob-frye-digital-wallpaper-assassin-s-creed-syndicate-wallpaper-myind-->
+				</div>
+			</section>
+					<!--THUMBNAIL GALLERY-->
+			<section class="gallery-container">
+				<div id="gallery">
+					<div class="footimg">
+						<img id="pic1-origins" class="foot-pics" src="images/AC_origins_screenshot_4.jpg" alt="Game character riding horse with bow and arrow in their hand">
+						<!--https://www.wallpaperflare.com/assassins-creed-origins-4k-8k-game-wallpaper-brnlj-->
+					</div>
+					<div class="footimg">
+						<img id="pic2-origins" class="foot-pics" src="images/AC_origins_screenshot_5.jpg" alt="Main character exploring a pyramid from inside">
+						<!--https://www.wallpaperflare.com/assassin-s-creed-video-games-ubisoft-bayek-assassin-s-creed-origins-wallpaper-patmc-->
+					</div>
+					<div class="footimg">
+						<img id="pic3-origins" class="foot-pics" src="images/AC_origins_screenshot_6.webp" alt="fight scene in the game">
+						<!--https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/fAJh7axZIUOs6otMa0oDI/4baf5154d950b78b59831d7390e3171b/ACO_screen_Septimius_GC.jpg-->
+					</div>
+					<div class="footimg">
+						<img id="pic4-origins" class="foot-pics" src="images/AC_origins_screenshot_7.jpg" alt="Main character in a fight using his shield from getting hit by a fire arrow">
+						<!--https://www.wallpaperflare.com/assassin-s-creed-origins-ubisoft-video-games-wallpaper-cymmr-->
+					</div>
+					<div class="footimg">
+						<img id="pic5-origins" class="foot-pics" src="images/AC_origins_screenshot_8.jpg" alt="Main character is watching the street while taking cover behind a pillar">
+						<!--https://www.wallpaperflare.com/8k-e3-2017-assassins-creed-origins-poster-wallpaper-usgqf-->
+					</div>
+					<div class="footimg">
+						<img id="pic6-origins" class="foot-pics" src="images/AC_origins_screenshot_9.jpg" alt="Main character is climbing the pyramid">
+						<!--https://www.wallpaperflare.com/man-climbing-on-pyramid-digital-wallpaper-assassin-s-creed-ubisoft-wallpaper-pmqmw/download/1366x768-->
+					</div>
+				</div>
+			</section>
+			<section class="footer-origins">
+				<h2>Developed by: </h2>
+				<img src="images/ubisoft_logo.png" class="origins-foot-logo" alt="developer logo">
+				<!--https://www.pngitem.com/middle/mowwhb_circle-hd-png-download/-->
+			</section>
+			<div id="copyright">
+				© Copyright Prabhjot Singh Sains, 2023.
+			</div>
+		</div>
+		<div id="rpgjun">
+			<main id="main-rpgjun">
+				<div class="fc-heading"><h3>Far cry 4</h3></div>
+				
+				<div class="ajay-main">
+					<img src="images/Far_cry_4_screenshot_1.jpg" class="ajay-img-main" alt="Game character on elephant">
+					<!--https://wall.alphacoders.com/big.php?i=601897-->
+				</div>
+				<div class="fc-bio">
+					<p>Hidden in the towering Himalayas lies Kyrat, a country steeped in tradition and violence. You are Ajay Ghale. Traveling to Kyrat to fulfill your mother’s dying wish, you find yourself caught up in a civil war to overthrow the oppressive regime of dictator Pagan Min.</p>
+				</div>
+				<div id="resultfc">
+					<div>
+						<div><h4>*  <span id="result__genreNamefc"></span></h4></div>
+						<div><h4>*  <span id="result__setupNamefc"></span></h4></div>
+					</div>
+				</div>
+			</main>
+			<button id="reloadBtn-fc" class="reloadBtn"><span class="text">Choose Again</span></button>
+			<div class="flex-container-buy-fc">
+				<section class="img-ajayback">
+					<img src="images/Far_cry_4_screenshot_2.jpg" class="ajay_back-img" alt="A man standing and facing snow covered mountains">
+					<!--https://wall.alphacoders.com/big.php?i=613667-->
+				</section>
+				<aside class="buy-now-farcry">
+					<h5>Buy Now</h5>
+					<p>Far Cry 4 is available to Buy on the following digital stores:</p>
+					<ul>
+						<li>Play Station 4</li>
+						<li>Xbox One</li>
+						<li>PC - Ubisoft Store</li>
+					</ul>
+				</aside>
+			</div>
+			<section class="farcry">
+				<h2>  Welcome to Kyrat...! Explore and navigate this vast open world, where danger and unpredictability lurk around every corner. Here, every decision counts, and every second is a story.</h2>
+			</section>
+			<section class="farcry-vid">
+				<iframe class="rpgjun-vid" src="https://www.youtube.com/embed/wNjWGNICDII?start=6&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				</iframe>
+			</section>
+			<section class="list-disc-farcry">
+				<ul>
+					<li>
+						<h3>EXPLORE AN OPEN WORLD FILLED WITH POSSIBILITIES</h3>
+						<p>
+							Discover the most diverse Far Cry world ever created. With terrain spanning from lush forests to the snowcapped Himalayas, the entire world is alive… and deadly.
+						</p>
+					</li>
+					<li>
+						<h3>ABUNDANT WILDLIFE</h3>
+						<p>
+							From leopards, rhinos, black eagles, and vicious honey badgers, Kyrat is home to abundant wildlife. As you embark on your hunt for resources, know that something may be hunting you...
+						</p>
+					</li>
+					<li>
+						<h3>SCOUT ENEMY TERRITORY</h3>
+						<p>
+							Scout enemy territory from above in the all-new gyrocopter and then plummet back to earth in your wing suit. Climb aboard the back of a six-ton elephant and unleash its raw power on your enemies.
+						</p>
+					</li>
+					<li>
+						<h3>A DIVERSE ARSENAL</h3>
+						<p>
+							Choose the right weapon for the job, no matter how insane or unpredictable that job might be. With a diverse arsenal, you’ll be prepared for anything.
+						</p>
+					</li>
+					<li>
+						<h3>CO-OP: BRING A FRIEND</h3>
+						<p>
+							Not every journey should be taken alone. Far Cry 4 allows for a second player to drop in and drop out at any point, re-imagining the cooperative experience in the true spirit of Far Cry for the next generation. You’ll now be able to discover and explore the living open world of Kyrat together.
+						</p>
+					</li>
+					<li>
+						<h3>THE ARENA: WHAT WILL YOU BECOME?</h3>
+						<p>
+							Prove your combat prowess and fight for survival and fame in the arena. Earn the respect of roaring crowds and test your will to survive, battling man and beast alike, until only one contestant remains standing.
+						</p>
+					</li>
+					<li>
+						<h3>MULTIPLAYER</h3>
+						<p>
+							Get a taste of Kyrat’s embattled history in a brand-new adversarial multiplayer mode. Play as a heavily armed soldier of the Golden Path rebellion, or as a member of the ancient Kalinag warrior tribe equipped with the lethal power of nature.
+						</p>
+					</li>
+					<li>
+						<h3>MAP EDITOR: DEATH-TRAP DESIGNER</h3>
+						<p>
+							Create and share your own maps using the most powerful and intuitive map editor ever offered in the Far Cry franchise. Your creations will get the attention they deserve thanks to its enhanced tools, improved interface, and the ability to publish and share your maps with the community.
+						</p>
+					</li>
+				</ul>
+			</section>
+			<section>
+				<div id="screenShow">
+					<img id="mainImg-farcry" src="images/Far_cry_4_screenshot_3.jpg" alt="A game character with knife in his hand running from yeti">
+					<!--https://www.wallpaperflare.com/male-game-character-illustration-the-sky-clouds-mountains-wallpaper-sqywa-->
+				</div>
+			</section>
+					<!--THUMBNAIL GALLERY-->
+			<section class="gallery-container">
+				<div id="gallery">
+					<div class="footimg">
+						<img id="pic1-farcry" class="foot-pics" src="images/Far_cry_4_screenshot_4.jpg" alt="A lion in the game looking for something">
+						<!--https://www.wallpaperflare.com/tiger-video-games-animals-far-cry-4-wallpaper-crvhs-->
+					</div>
+					<div class="footimg">
+						<img id="pic2-farcry" class="foot-pics" src="images/Far_cry_4_screenshot_5.jpg" alt="Game character sitting after killing a man">
+						<!--https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7majKLVsIbnXtc3UYXflDP/199c886e197831a974eed56238448ca6/overview6.jpg-->
+					</div>
+					<div class="footimg">
+						<img id="pic3-farcry" class="foot-pics" src="images/Far_cry_4_screenshot_6.jpg" alt="Game character in a fight with tiger">
+						<!--https://www.wallpaperflare.com/far-cry-4-attack-games-far-cry-4-2014-wallpaper-tghko-->
+					</div>
+					<div class="footimg">
+						<img id="pic4-farcry" class="foot-pics" src="images/Far_cry_4_screenshot_7.jpg" alt="A downward view of village situated up hill">
+						<!--https://www.wallpaperflare.com/farcry-game-far-cry-4-video-games-landscape-mountain-scenics-nature-wallpaper-hxdwe-->
+					</div>
+					<div class="footimg">
+						<img id="pic5-farcry" class="foot-pics" src="images/Far_cry_4_screenshot_8.jpg" alt="Game character in a fight with bow arrow">
+						<!--https://www.wallpaperflare.com/far-cry-4-tree-men-plant-nature-transportation-mode-of-transportation-wallpaper-hcugb-->
+					</div>
+					<div class="footimg">
+						<img id="pic6-farcry" class="foot-pics" src="images/Far_cry_4_screenshot_9.jpg" alt="Games characters in a gun fight">
+						<!--https://www.wallpaperflare.com/far-cry-far-cry-4-tree-nature-men-plant-transportation-wallpaper-cgza-->
+					</div>
+				</div>
+			</section>
+			<section class="footer-origins">
+				<h2>Developed by: </h2>
+				<img src="images/ubisoft_logo.png" class="origins-foot-logo" alt="developer logo">
+				<!--https://www.pngitem.com/middle/mowwhb_circle-hd-png-download/-->
+			</section>
+			<div id="copyright">
+				© Copyright Prabhjot Singh Sains, 2023.
+			</div>
+		</div>
+		<div id="rpgopen">
+			<main id="main-rpgopen">
+				<div class="witcher-heading"><h3>The Witcher 3: Wild Hunt</h3></div>
+				
+				<div class="geralt-main">
+					<img src="images/Witcher_screenshot_1.jpg" class="geralt-img-main" alt="Game character sitting on a throne with a sword in his hand">
+					<!--https://www.wallpaperflare.com/soldier-sitting-on-throne-wallpaper-video-games-white-hair-wallpaper-puqke/download/1366x768-->
+				</div>
+
+				<div class="witcher-bio">
+					<p>You are Geralt of Rivia, mercenary monster slayer. Before you stands a war-torn, monster-infested continent you can explore at will. Your current contract? Tracking down Ciri — the Child of Prophecy, a living weapon that can alter the shape of the world.</p>
+				</div>
+				<div id="resultwitch">
+					<div>
+						<div><h4>*  <span id="result__genreNamewitch"></span></h4></div>
+						<div><h4>*  <span id="result__setupNamewitch"></span></h4></div>
+					</div>
+				</div>
+			</main>
+			<button id="reloadBtn-witcher" class="reloadBtn"><span class="text">Choose Again</span></button>
+			<div class="flex-container-buy-witcher">
+				<section class="img-witcherback">
+					<img src="images/Witcher_screenshot_2.jpg" class="witcher_back-img" alt="Witcher game main character riding a horse going towards a castle">
+					<!--https://www.wallpaperflare.com/warrior-horse-painting-sky-aenami-video-games-the-witcher-wallpaper-gqqgg-->
+				</section>
+				<aside class="buy-now-witcher">
+					<h5>Buy Now</h5>
+					<p>The Witcher 3: Wild Hunt is available to Buy on the following digital stores:</p>
+					<ul>
+						<li><a href="https://buy.thewitcher.com/en_ca/">Play Station 4</a></li>
+						<li><a href="https://buy.thewitcher.com/en_ca/">Xbox One</a></li>
+						<li><a href="https://buy.thewitcher.com/en_ca/">PC</a></li>
+						<li><a href="https://buy.thewitcher.com/en_ca/">Nintendo Switch</a></li>
+					</ul>
+				</aside>
+			</div>
+			<section class="witcher">
+				<h2>As Geralt, embark on your most perilous and personal journey yet as you track down Ciri — your adopted daughter and a living weapon of untold power. This child of prophecy, intertwined with you by the bonds of destiny, is sought after by the most dangerous forces of the Continent thanks to the Elder Blood running through her veins. So it falls to you, the one who mentored, trained, and raised her, to safeguard Ciri’s fate and that of the entire realm.</h2>
+			</section>
+			<section class="witcher-vid">
+				<iframe class="rpgopen-vid" src="https://www.youtube.com/embed/OWlkp2qImuI?start=1&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				</iframe>
+			</section>
+			<section class="list-disc-witcher">
+				<ul>
+					<li>
+						<h3>EXPLORE AN OPEN WORLD FILLED WITH POSSIBILITIES</h3>
+						<p>
+							The world of The Witcher beckons to be explored -- just pick a point on the horizon and venture off into the unknown. You’ll have your trusty horse to call on whenever you need. Load it with trophies taken from the massive beasts you hunt down or gallop it into combat to crush those standing in your way. You’ll also go where no horse can follow, descending deep into sprawling caves, diving beneath the waves to gather sea herbs and search forgotten shipwrecks for long-lost treasure. You’ll sail your boat through storms, navigate past hostile sea monsters and along craggy, dangerous shores pounded by waves. This land is rich in mystery and adventure -- traverse it any way you like.
+						</p>
+					</li>
+					<li>
+						<h3>Regions</h3>
+						<p>
+							Investigate the wine-rich duchy of Blood and Wine’s Toussaint, where danger lurks beneath its regal splendor, face the frigid cold of the wind-swept Skellige Isles, and challenge the dark forces roaming the desolate, war-ravaged swamps of No Man’s Land. As you traverse distinct regions, you’ll feel and see the world change. You’ll hear the change on people’s lips, too: in Skellige battle-hardened marauders will shout boasts of their latest raids, in Toussaint, knights errant use colorful expressions evoking the prestige of their royal roles, while in No Man’s Land, villagers will pray in hushed whispers to dark, ancient gods.
+						</p>
+					</li>
+					<li>
+						<h3>Inhabitants</h3>
+						<p>
+							This world is lively and full of color, home to a broad mix of races, nations and social classes -- everything from filth-covered elven beggars to the wealthiest of kings. As an outcast bounty hunter, you mix in all these circles, yet belong to none. In your search for information you’ll make unsavory deals with criminals, attend balls with the high-born and listen to the heart-wrenching tales of war refugees. All around you will see signs of gross injustice, wartime atrocities and more -- but it’s always up to you to either help or shrug and let the fires rage. The Continent is also a living, wild world: you’ll interact with animals both hostile and benign and witness a true ecosystem with natural checks and balances in action. And in this system, you’ll be the apex predator. Clear out the monsters infesting a region, or eradicate a nest to rid an area of the foul beasts it spawns, and watch residents return to rebuild their lives. In The Witcher, the world lives alongside you and resonates with your every action.
+
+						</p>
+					</li>
+					<li>
+						<h3>Activities</h3>
+						<p>
+							Horse races, tavern brawls, card games -- the inhabitants of the world of The Witcher know how to have a good time. Take a break from monster hunting just to join in the fun or to win some coin to further your goals. In a new twist to evenings by the fire, try your hand at gwent, a deep and rewarding game-within-a-game. Invented by dwarves and played for fun or money, this simple yet addictive pastime will have you sitting down for match after match and constantly thinking about how to bolster your deck.
+						</p>
+					</li>
+					<li>
+						<h3>Mutations And Skills</h3>
+						<p>
+							Witchers’ mutations endow them with incredible speed, reflexes and strength and enhance their senses, allowing them to see more, hear more, perceive more… With these augmented senses, Geralt can track a wyvern on the dark of night, follow the scent of weeks-old perfume and parry crossbow bolts whistling towards his back. Witcher’s Signs, another set of skills in Geralt’s repertoire, are powerful combat spells that take various forms, from protective barriers, through torrents of flame, to magic snares and more. Lastly there is Geralt’s wolf medallion, the symbol of his witcher school. This pendant hums to alert him of nearby magic and monsters -- invaluable help to a monster hunter. Most of these skills can be developed for additional effects and increased potency, making Geralt an even more fearsome fighter.
+						</p>
+					</li>
+					<li>
+						<h3>Monster Hunts</h3>
+						<p>
+							Geralt is a bounty hunter, an apex predator in a world gone wrong. In a monster-infested world he is a necessary counter-balance. His main task is to eliminate creatures that pose a threat to society. Hunting monsters is his business -- and there’s always plenty of work. Monsters come in all shapes and sizes, and while some are members of broader species, others are one -of-a-kind. To face the latter, extremely powerful or clever creatures, you’ll embark on special quests to learn about their fighting style and behavior. The monster threat is real and strong. Along your path you’ll encounter entire areas overrun by beasts, the humans and nonhumans who once lived there gone. Should you decide to risk death, your job will be to exterminate every last pest and render these places safe once more. Succeed and you’ll see folk return, more than eager to craft and sell you rare, enhanced gear.
+						</p>
+					</li>
+					<li>
+						<h3>Equipment</h3>
+						<p>
+							As a monster hunter, Geralt has an extensive arsenal of weapons at his disposal. From swords and axes to crossbows and unique gear available only from the finest crafters, the tools of Geralt’s trade allow him to deal death in many ways. The wide variety of armor available to Geralt absorbs both physical and magical attacks, thereby delaying the witcher’s own demise, while potent blade oils and bombs give him an extra edge in combat. Thanks to his training in alchemy, Geralt can gather rare herbs along his path and use them to brew special, highly toxic concoctions. His potions would kill any ordinary human, but Geralt’s mutations let him metabolize them. They grant him abilities that include seeing in the dark, moving faster, striking with added force… and much, much more.
+						</p>
+					</li>
+					<li>
+						<h3>Allies And Enemies</h3>
+						<p>
+							The enemy of your enemy is your friend - you can’t afford to care if they’re virtuous to the core, or ruthless or otherwise vile. Geralt is a professional, and if it helps get the job done, he’ll accept the aid of scoundrels and brutes, as well as sorceresses and jolly dwarves. In his line of work, he can also become a target. Those with different agendas send their spies, assassins, murderers and thugs after him. Since the forces of order generally don’t like witchers, you won’t be able to count on guards or soldiers coming to your aid. You’re on your own -- and in for a tough fight.
+						</p>
+					</li>
+				</ul>
+			</section>
+			<section>
+				<div id="screenShow">
+					<img id="mainImg-witcher" src="images/Witcher_screenshot_3.jpg" alt="Game character exploring places">
+					<!--https://www.wallpaperflare.com/the-witcher-wild-hunt-3-wallpaper-the-witcher-3-wild-hunt-geralt-of-rivia-wallpaper-pcqrr-->
+				</div>
+			</section>
+					<!--THUMBNAIL GALLERY-->
+			<section class="gallery-container">
+				<div id="gallery">
+					<div class="footimg">
+						<img id="pic1-witcher" class="foot-pics" src="images/Witcher_screenshot_4.jpg" alt="game character seeing something to her right">
+						<!--https://cdn-s-thewitcher.cdprojektred.com/witcher3/backgrounds/story-child-1.jpg-->
+					</div>
+					<div class="footimg">
+						<img id="pic2-witcher" class="foot-pics" src="images/Witcher_screenshot_5.jpg" alt="Game character in a fight">
+						<!--https://cdn-s-thewitcher.cdprojektred.com/witcher3/backgrounds/story-plague-2.jpg-->
+					</div>
+					<div class="footimg">
+						<img id="pic3-witcher" class="foot-pics" src="images/Witcher_screenshot_6.jpg" alt="Game character killing monsters">
+						<!--https://cdn-s-thewitcher.cdprojektred.com/witcher3/backgrounds/monsterhunter-hunts-1.jpg-->
+					</div>
+					<div class="footimg">
+						<img id="pic4-witcher" class="foot-pics" src="images/Witcher_screenshot_7.jpg" alt="Games character sitting under a tree, opposite to each other">
+						<!--https://www.wallpaperflare.com/the-witcher-the-witcher-3-wild-hunt-ciri-the-witcher-geralt-of-rivia-wallpaper-zaee-->
+					</div>
+					<div class="footimg">
+						<img id="pic5-witcher" class="foot-pics" src="images/Witcher_screenshot_8.jpg" alt="All the game characters in a image">
+						<!--https://www.wallpaperflare.com/the-witcher-the-witcher-3-wild-hunt-geralt-of-rivia-cirilla-wallpaper-pwuof/download/1366x768-->
+					</div>
+					<div class="footimg">
+						<img id="pic6-witcher" class="foot-pics" src="images/Witcher_screenshot_9.jpg" alt="Game character examining weapons and armour">
+						<!--https://cdn-s-thewitcher.cdprojektred.com/witcher3/backgrounds/monsterhunter-equipment-1.jpg-->
+					</div>
+				</div>
+			</section>
+			<section class="footer-origins">
+				<h2>Developed by: </h2>
+				<img src="images/CDProjekt-White-logo.svg" class="origins-foot-logo" alt="developer logo">
+				<!--https://www.cdprojekt.com/pl/wp-content/themes/cdprojekt/assets/images/CDProjekt-White.svg-->
+			</section>
+			<div id="copyright">
+				© Copyright Prabhjot Singh Sains, 2023.
+			</div>
+		</div>
+		<div id="tpsjun">
+			<main id="main-tpsjun">
+				<div class="uncharted-heading"><h3>UNCHARTED 4: A Thief's End</h3></div>
+				
+				<div class="nathan-main">
+					<img src="images/Uncharted_screenshot_1.jpg" class="nathan-img-main" alt="Game character exploring a ruin mansion">
+					<!--https://www.wallpaperflare.com/uncharted-uncharted-4-a-thief-s-end-nathan-drake-wallpaper-qyzqx/download/1366x768-->
+				</div>
+				<div class="uncharted-bio">
+					<p>On the hunt for Captain Henry Avery’s long-lost treasure, Sam and Drake set off to find Libertalia, the pirate utopia deep in the forests of Madagascar. UNCHARTED 4: A Thief’s End takes players on a journey around the globe, through jungle isles, far-flung cities and snow-capped peaks on the search for Avery’s fortune.</p>
+				</div>
+				<div id="resultuncharted">
+					<div>
+						<div><h4>*  <span id="result__genreNameuncharted"></span></h4></div>
+						<div><h4>*  <span id="result__setupNameuncharted"></span></h4></div>
+					</div>
+				</div>
+			</main>
+			<button id="reloadBtn-uncharted" class="reloadBtn"><span class="text">Choose Again</span></button>
+			<div class="flex-container-buy-uncharted">
+				<section class="img-nathanback">
+					<img src="images/Uncharted_screenshot_2.jpg" class="nathan_back-img" alt="Game character injured and firing his gun">
+					<!--https://www.wallpaperflare.com/game-hd-wallpaper-uncharted-4-a-thief-s-end-nathan-drake-video-games-wallpaper-qbcj-->
+				</section>
+				<aside class="buy-now-uncharted">
+					<h5>Buy Now</h5>
+					<p>UNCHARTED 4: A Thief's End is available to Buy on the following digital stores:</p>
+					<ul>
+						<li><a href="https://www.playstation.com/en-ca/games/uncharted-4-a-thiefs-end/">Play Station 4</a></li>
+					</ul>
+				</aside>
+			</div>
+			<section class="uncharted">
+				<h2>Set three years after the events of UNCHARTED 3: Drake’s Deception, Nathan Drake has presumably left the world of fortune-hunting behind. However, it doesn’t take long for fate to come calling when Drake’s brother, Sam, resurfaces seeking his help to save his own life and offering an adventure Drake can’t resist.  </h2>
+			</section>
+			<section class="uncharted-vid">
+				<iframe class="tpsjun-vid" src="https://www.youtube.com/embed/hh5HV4iic1Y?start=10&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				</iframe>
+			</section>
+			<section class="list-disc-uncharted">
+				<ul>
+					<li>
+						<h3>Iconic locations</h3>
+						<p>
+							In his ultimate adventure, Nathan Drake pursues the lost treasure of pirate Henry Avery while confronting his personal past and future. His biggest journey features some of the largest cinematic action set pieces in the UNCHARTED franchise. Nathan’s adventures take him across the globe, including an epic prison break from a Panama jail, party-crashing a private auction in Italy, traversing the Madagascar outback, and more...! Locations: Panama, Italy, Scotland, Madagascar, King's Bay
+						</p>
+					</li>
+					<li>
+						<h3>Cinematic action-adventure</h3>
+						<p>
+							Experience the UNCHARTED series’ cinematic action set pieces and thrilling blockbuster gameplay. Travel through expansive, richly detailed environments and take on formidable rivals in pursuit of lost treasures.
+						</p>
+					</li>
+					<li>
+						<h3>Memorable characters</h3>
+						<p>
+							Play as Nathan Drake and Chloe Frazer as you get to know the expanded cast of incredibly realistic, relatable and complex characters with a variety of – sometimes conflicting – motivations.
+						</p>
+					</li>
+					<li>
+						<h3>Nathan Drake</h3>
+						<p>
+							Retired from fortune-hunting, Drake is suddenly forced back into the world of thieves. With the stakes much more personal, he embarks on a globe-trotting journey in pursuit of a historical conspiracy behind a fabled pirate treasure. His greatest adventure will test his physical limits, his resolve, and ultimately what he’s willing to sacrifice to save the ones he loves.
+						</p>
+					</li>
+					<li>
+						<h3>Sam Drake</h3>
+						<p>
+							Sam is five years older than his younger brother Nate, and previously thought to be dead. It is said his disappearance is what originally caused Nate to pursue a life of treasure hunting. Sam has been described as more reckless than Nate and a little jealous of his brother’s achievements.
+						</p>
+					</li>
+				</ul>
+			</section>
+			<section>
+				<div id="screenShow">
+					<img id="mainImg-uncharted" src="images/Uncharted_screenshot_3.jpg" alt="game character standing with a gun in his hand">
+					<!--https://www.wallpaperflare.com/uncharted-uncharted-4-a-thief-s-end-nathan-drake-wallpaper-ehhy/download/1366x768-->
+				</div>
+			</section>
+					<!--THUMBNAIL GALLERY-->
+			<section class="gallery-container">
+				<div id="gallery">
+					<div class="footimg">
+						<img id="pic1-uncharted" class="foot-pics" src="images/Uncharted_screenshot_4.jpg" alt="Two game character on a jeep in hilly area">
+						<!--https://www.wallpaperflare.com/uncharted-4-a-thief-s-end-nathan-drake-naughty-dog-video-games-wallpaper-cutkt-->
+					</div>
+					<div class="footimg">
+						<img id="pic2-uncharted" class="foot-pics" src="images/Uncharted_screenshot_5.jpg" alt="A wooden ship on fire in a water cave">
+						<!--https://www.wallpaperflare.com/uncharted-4-ship-wallpaper-uncharted-4-a-thief-s-end-playstation-4-wallpaper-poglg-->
+					</div>
+					<div class="footimg">
+						<img id="pic3-uncharted" class="foot-pics" src="images/Uncharted_screenshot_6.jpg" alt="Game character making a dive to catch a falling old coin">
+						<!--https://www.wallpaperflare.com/uncharted-4-a-thief-s-end-one-person-adult-men-communication-wallpaper-hbuys/download/1366x768-->
+					</div>
+					<div class="footimg">
+						<img id="pic4-uncharted" class="foot-pics" src="images/Uncharted_screenshot_7.jpg" alt="An old town in the game now taken over by vegetation">
+						<!--https://www.wallpaperflare.com/uncharted-uncharted-4-a-thief-s-end-mountain-ruin-town-wallpaper-hnubg/download/1366x768-->
+					</div>
+					<div class="footimg">
+						<img id="pic5-uncharted" class="foot-pics" src="images/Uncharted_screenshot_8.jpg" alt="Game character exploring a room alone">
+						<!--https://www.wallpaperflare.com/uncharted-4-a-thief-s-end-playstation-4-wallpaper-camgi/download/1366x768-->
+					</div>
+					<div class="footimg">
+						<img id="pic6-uncharted" class="foot-pics" src="images/Uncharted_screenshot_9.jpg" alt="Game character in a fight">
+						<!--https://www.wallpaperflare.com/uncharted-4-a-thiefs-end-two-people-weapon-adult-gun-day-wallpaper-huwcb-->
+					</div>
+				</div>
+			</section>
+			<section class="footer-origins">
+				<h2>Developed by: </h2>
+				<img src="images/naughty-dog-logo.webp" class="origins-foot-logo" alt="Developer logo">
+				<!--https://gmedia.playstation.com/is/image/SIEPDC/naughty-dog-logo-en-12nov20?$1600px--t$-->
+			</section>
+			<div id="copyright">
+				© Copyright Prabhjot Singh Sains, 2023.
+			</div>
+		</div>
+		<div id="tpsopen">
+			<main id="main-tpsopen">
+				<div class="tomclancy-heading"><h3>Tom Clancy's Ghost Recon® Wildlands</h3></div>
+				
+				<div class="tom-main">
+					<img src="images/Tom_Clancy_screenshot_1.jpg" class="tom-img-main" alt="Game Characters standing up hill watching the valley">
+					<!--https://www.wallpaperflare.com/green-leafed-trees-tom-clancy-s-ghost-recon-wildlands-mountain-wallpaper-pzpwq-->
+				</div>
+				<div class="tomclancy-bio">
+					<p>The Santa Blanca drug cartel has transformed the beautiful South American country of Bolivia into a perilous narco-state, leading to lawlessness, fear, and rampant violence. With their corrosive influence growing, the cartel plagues the citizens of Bolivia but all hope is not lost. The Ghosts, an elite US Special Forces team, are tasked to combat the cartel and save the country from collapse.</p>
+				</div>
+				<div id="resultTomClancy">
+					<div>
+						<div><h4>*  <span id="result__genreNameTomClancy"></span></h4></div>
+						<div><h4>*  <span id="result__setupNameTomClancy"></span></h4></div>
+					</div>
+				</div>
+			</main>
+			<button id="reloadBtn-tom" class="reloadBtn"><span class="text">Choose Again</span></button>
+			<div class="flex-container-buy-tomclancy">
+				<section class="img-tomclancyback">
+					<img src="images/Tom_Clancy_screenshot_2.jpg" class="tomclancy_back-img" alt="game character watching something down the hill sitting in crouch position">
+					<!--https://www.wallpaperflare.com/tom-clancy-s-bolivia-chopper-weapon-gun-landscape-commando-wallpaper-cutrh-->
+				</section>
+				<aside class="buy-now-tomclancy">
+					<h5>Buy Now</h5>
+					<p>Tom Clancy's Ghost Recon® Wildlands is available to Buy on the following digital stores:</p>
+					<ul>
+						<li><a href="https://www.ubisoft.com/en-us/game/ghost-recon/wildlands#211NQJabvU1iRclHweRR7M">Play Station 4</a></li>
+						<li><a href="https://www.ubisoft.com/en-us/game/ghost-recon/wildlands#211NQJabvU1iRclHweRR7M">Xbox One</a></li>
+						<li><a href="https://www.ubisoft.com/en-us/game/ghost-recon/wildlands#211NQJabvU1iRclHweRR7M">Ubisoft Store</a></li>
+					</ul>
+				</aside>
+			</div>
+			<section class="tomclancy">
+				<h2>Get Ghost Recon Wildlands and experience the game that blazed the path for Ghost Recon Breakpoint. Enter a vast open world that challenges you to explore, discover cartel operations, and shut them down however you see fit. Use any combination of weapons, vehicles, and tactics to destroy the cartel’s assets, take out its bosses, and strike at the heart of its leadership.</h2>
+			</section>
+			<section class="tomclancy-vid">
+				<iframe class="tpsopen-vid" src="https://www.youtube.com/embed/KL8DcwE16rU?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				</iframe>
+			</section>
+			<section class="list-disc-tomclancy">
+				<ul>
+					<li>
+						<h3>TAKE DOWN THE CARTEL</h3>
+						<p>
+							In a near future, Bolivia has fallen into the hands of Santa Blanca, a merciless drug cartel who spread injustice and violence. Their objective: to create the biggest Narco-State in history.
+						</p>
+					</li>
+					<li>
+						<h3>BECOME A GHOST</h3>
+						<p>
+							Create and fully customize your Ghost, weapons, and gear. Enjoy a total freedom of play style. Lead your team and take down the cartel, either solo or with up to three friends.
+						</p>
+					</li>
+					<li>
+						<h3>EXPLORE BOLIVIA</h3>
+						<p>
+							Journey through Ubisoft's largest action-adventure open world. Discover the stunning diverse landscapes of the Wildlands both on and off road, in the air, on land, and at sea with over 60 different vehicles.
+						</p>
+					</li>
+					<li>
+						<h3>TRUST YOUR EYES</h3>
+						<p>
+							Taking out the Santa Blanca Cartel becomes an even richer experience with Tobii Eye Tracking. Features like Extended View, Aim at Gaze and Communications Wheel let you use your natural eye movement to interact with the environment – without interrupting or modifying your traditional controls. Now armed with an extensive eye tracking feature set, team communication becomes more seamless, firefights become more intense and exploring your new surroundings becomes an even more immersive adventure.
+						</p>
+					</li>
+					<li>
+						<h3>PLAY YOUR WAY</h3>
+						<p>
+							Enter the Wildlands in up to four player co-op, or play solo with AI-controlled squadmates. Coordinate your attacks or issue orders to stealthily dismantle the Santa Blanca cartel – or smash it with brute force.
+						</p>
+					</li>
+					<li>
+						<h3>YOUR GHOST, YOUR STYLE</h3>
+						<p>
+							Take full control of your squad’s appearance with a wide range of clothing, tactical gear, and accessories. Choose the weapons that work best for your playstyle, and tweak your firearms’ performance with new muzzles, magazines, optics, stocks, and much more.
+						</p>
+					</li>
+					<li>
+						<h3>OWN THE ROAD, WATERWAYS, AND AIR</h3>
+						<p>
+							Commandeer more than 60 different vehicles to transport your squad across the vast Bolivian landscape. Take to the highways with motorbikes, buggies, or supercars, ride the waves in a range of watercraft, or storm enemy compounds with an armored military vehicle or attack chopper.
+						</p>
+					</li>
+					<li>
+						<h3>SURVIVE UNTIL THE EXTRACTION IN THE BRAND NEW MERCENARIES MODE</h3>
+						<p>
+							Mercenaries is an 8 player free-for-all PvPvE gameplay experience. Your objective is to call for rescue, locate and reach the extraction point, then be the first to board the chopper.
+						</p>
+					</li>
+				</ul>
+			</section>
+			<section>
+				<div id="screenShow">
+					<img id="mainImg-TomClancy" src="images/Tom_Clancy_screenshot_3.jpg" alt="Game characters standing with a jeep">
+					<!--https://www.wallpaperflare.com/tom-clancy-s-ghost-recon-wildlands-video-games-wallpaper-cwkhu-->
+				</div>
+			</section>
+					<!--THUMBNAIL GALLERY-->
+			<section class="gallery-container">
+				<div id="gallery">
+					<div class="footimg">
+						<img id="pic1-TomClancy" class="foot-pics" src="images/Tom_Clancy_screenshot_4.jpg" alt="Game Characters in rain with guns going somewhere">
+						<!--https://www.wallpaperflare.com/tom-clancy-s-ghost-recon-wildlands-four-men-with-guns-game-wallpaper-wallpaper-poihs-->
+					</div>
+					<div class="footimg">
+						<img id="pic2-TomClancy" class="foot-pics" src="images/Tom_Clancy_screenshot_5.jpg" alt="Games characters hiding behind the objects, ready to fight">
+						<!--https://www.wallpaperflare.com/tom-clancy-s-rain-night-enemy-commando-military-gun-weapon-wallpaper-cyrsy-->
+					</div>
+					<div class="footimg">
+						<img id="pic3-TomClancy" class="foot-pics" src="images/Tom_Clancy_screenshot_6.jpg" alt="Game characters going downhill by bikes">
+						<!--https://www.wallpaperflare.com/tom-clancy-s-bolivia-motorcycle-desert-military-tom-clancy-s-ghost-recon-wildlands-wallpaper-mdpjj-->
+					</div>
+					<div class="footimg">
+						<img id="pic4-TomClancy" class="foot-pics" src="images/Tom_Clancy_screenshot_7.jpg" alt="Helicopter shooting the game characters">
+						<!--https://www.wallpaperflare.com/5k-tom-clancys-ghost-recon-wildlands-wallpaper-quhgc-->
+					</div>
+					<div class="footimg">
+						<img id="pic5-TomClancy" class="foot-pics" src="images/Tom_Clancy_screenshot_8.jpg" alt="Game character with rifle running">
+						<!--https://www.wallpaperflare.com/tom-clancy-s-bolivia-military-commando-gun-weapon-tom-clancy-s-ghost-recon-wildlands-wallpaper-cgbya-->
+					</div>
+					<div class="footimg">
+						<img id="pic6-TomClancy" class="foot-pics" src="images/Tom_Clancy_screenshot_9.jpg" alt="Game character sky fall">
+						<!--https://www.wallpaperflare.com/tom-clancy-s-bolivia-fall-parachutes-commando-military-wallpaper-ctuqi/download/1366x768-->
+					</div>
+				</div>
+			</section>
+			<section class="footer-origins">
+				<h2>Developed by: </h2>
+				<img src="images/ubisoft_logo.png" class="origins-foot-logo" alt="Developer Ubisoft Logo">
+				<!--https://www.cdprojekt.com/pl/wp-content/themes/cdprojekt/assets/images/CDProjekt-White.svg-->
+			</section>
+			<div id="copyright">
+				© Copyright Prabhjot Singh Sains, 2023.
+			</div>
+		</div>
+    </body>
+</html>

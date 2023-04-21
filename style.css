@@ -1,0 +1,819 @@
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&display=swap');
+body{
+    color: aliceblue;
+    font-family: 'Francois One', sans-serif;
+    font-weight: normal;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+    cursor: pointer;
+}
+a:hover{
+    color:#E60D04;
+    font-size: 20px;
+    transition: font-size ease-in-out .2s;
+    transform: translateZ(0);
+    will-change: transform;
+}
+.bg{
+    background-image: url("images/ac-logo_smoke.jpg");
+    padding: 1px;
+    margin: 0;
+    padding-bottom: 15px;
+}
+#site-name{
+    text-align: center;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+#site-name a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.slideshow-container{
+    max-width: 100%;
+    width: 100%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slideshow-box{
+    display: flex;
+    height: 100%;
+    width: 400%;
+    justify-content: space-between;
+    animation: imgBox 15s linear infinite alternate;
+    cursor: pointer;
+}
+@keyframes imgBox{
+    0%{
+      margin-left: 0;
+    }
+    100%{
+      margin-left: -50%;
+    }
+}
+.slideshow-box:hover{
+    animation-play-state: paused;
+}
+.slideshow-box .slideshow-image{
+    width: calc(100% - 100px);
+    height: 100%;
+}
+.slideshow-box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}  
+.slogan{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+.input-container{
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: center;
+    justify-content: space-evenly;
+}
+#btn{
+    margin: 0 auto;
+    max-width: 100%;
+    text-align: center;
+    margin-top: 40px;
+    cursor: pointer;
+}
+#aajun, #aaopen, 
+#rpgjun, #rpgopen, 
+#tpsjun, #tpsopen{
+    display: none;
+    background: hsla(280, 84%, 41%, 1);
+    background: linear-gradient(135deg, hsla(280, 84%, 41%, 1) 11%, hsla(218, 97%, 56%, 1) 100%);
+    background: -moz-linear-gradient(135deg, hsla(280, 84%, 41%, 1) 11%, hsla(218, 97%, 56%, 1) 100%);
+    background: -webkit-linear-gradient(135deg, hsla(280, 84%, 41%, 1) 11%, hsla(218, 97%, 56%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#8711c1", endColorstr="#2472fc", GradientType=1 );
+}
+.tomb-heading, .aco-heading, 
+.fc-heading, .witcher-heading, 
+.uncharted-heading, .tomclancy-heading{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+}
+.tomb-heading h3, .aco-heading h3, 
+.fc-heading h3, .witcher-heading h3, 
+.uncharted-heading h3, 
+.tomclancy-heading h3{
+    text-align: center;
+    font-size: 3em;
+    font-weight: 600;
+    width: 50%;
+    text-transform: uppercase;
+    line-height: 1.16;
+    text-shadow: 0px -3px 20px rgba(0, 0, 0, 1);
+    margin-top: 70px;
+}
+.lara-img-main, .byek-img-main, 
+.ajay-img-main, .geralt-img-main, 
+.nathan-img-main, .tom-img-main{
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+}
+.tomb-bio{
+    position: absolute;
+    top: 18em;
+    width: 28%;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 auto;
+}
+.tomb-bio p{
+    letter-spacing: 2px;
+    font-size: 1em;
+    padding: 27px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: rgba( 255, 255, 255, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 1px );
+    -webkit-backdrop-filter: blur( 1px );
+    border-radius: 10px;
+    width: 195px;
+    text-align: justify;
+}
+#result-tomb{
+    position: absolute;
+    top: 26em;
+    margin-left: 135px;
+    line-height: 0;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+}
+.flex-container-buy-tomb, .flex-container-buy-origins, 
+.flex-container-buy-fc, .flex-container-buy-witcher, 
+.flex-container-buy-uncharted, .flex-container-buy-tomclancy{
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 auto;
+    max-width: 1000px;
+    margin-top: 60px;
+    width: 90%;
+    justify-content: space-evenly;
+    gap: 50px;
+}
+.lara_croft-img, .byek_back-img, 
+.ajay_back-img, .witcher_back-img, 
+.nathan_back-img, .tomclancy_back-img{
+    max-width: 600px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.buy-now-tomb, .buy-now-origins, 
+.buy-now-farcry, .buy-now-witcher, 
+.buy-now-uncharted, .buy-now-tomclancy{
+    flex: 1 0 100px; 
+}
+.buy-now-tomb h5, .buy-now-origins h5, 
+.buy-now-farcry h5, .buy-now-witcher h5, 
+.buy-now-uncharted h5, .buy-now-tomclancy h5{
+    text-transform: uppercase;
+    font-size: 1.5em;
+    margin-bottom: 0px;
+}
+.buy-now-tomb p, .buy-now-origins p, 
+.buy-now-farcry p, .buy-now-witcher p, 
+.buy-now-uncharted p, .buy-now-tomclancy p{
+    margin: 15px;
+}
+.buy-now-tomb ul, .buy-now-origins ul, 
+.buy-now-farcry ul, .buy-now-witcher ul, 
+.buy-now-uncharted ul, .buy-now-tomclancy ul{
+    margin: 15px;  
+}
+.buy-now-tomb ul li, .buy-now-origins ul li, 
+.buy-now-farcry ul li, .buy-now-witcher ul li, 
+.buy-now-uncharted ul li, .buy-now-tomclancy ul li{
+    margin-bottom: 5px;
+}
+.become-tomb, .origins, 
+.farcry, .witcher, 
+.uncharted, .tomclancy{
+    display: flex;
+    justify-content: center;
+}
+.become-tomb h2{
+    font-size: 4em;
+    letter-spacing: 5px;
+    text-align: center;
+    max-width: 100%;
+}
+.tomb-vid, .origins-vid, 
+.farcry-vid, .witcher-vid, 
+.uncharted-vid, .tomclancy-vid{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.aajun-vid, .aaopen-vid, 
+.rpgjun-vid, .rpgopen-vid, 
+.tpsjun-vid, .tpsopen-vid{
+    width: 100%;
+    height:550px;
+}
+.list-disc-tomb, .list-disc-origins, 
+.list-disc-farcry, .list-disc-witcher, 
+.list-disc-uncharted, .list-disc-tomclancy{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+.list-disc-tomb ul, .list-disc-origins ul, 
+.list-disc-farcry ul, .list-disc-witcher ul, 
+.list-disc-uncharted ul, .list-disc-tomclancy ul{
+    list-style-type: none;
+    padding: 0;
+    letter-spacing: 1px;
+}
+.list-disc-tomb h3, .list-disc-origins h3, 
+.list-disc-farcry h3, .list-disc-witcher h3, 
+.list-disc-uncharted h3, .list-disc-tomclancy h3{
+    font-size: 1.5em;
+    font-weight: normal;
+    margin-bottom: 8px;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+.list-disc-tomb p, .list-disc-origins p, 
+.list-disc-farcry p, .list-disc-uncharted p, 
+.list-disc-tomclancy p{
+    font-size: 1.2em;
+    margin-top: 0;
+    font-weight: normal;
+    padding-left: 20px;
+}
+#screenShow{
+    display: flex;
+    justify-content: center;
+}
+#mainImg-tomb, #mainImg-origins, 
+#mainImg-farcry, #mainImg-witcher, 
+#mainImg-uncharted, #mainImg-TomClancy{
+    max-width: 650px;
+    width: 100%;
+    height: auto;
+    border: beige solid 5px;
+}
+.gallery-container{
+    max-width: 1235px;
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+#gallery{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.foot-pics{
+    height: 100%;
+    width: 200px;
+    object-fit: cover;
+    cursor: pointer;
+}
+.footimg{
+    transform: rotate(5deg);
+    border: beige solid 2px;
+}
+.footer-tomb, .footer-origins{
+    margin-top: 50px;
+    background-color: #060606;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.footer-tomb h2, .footer-origins h2{
+    font-size: 1em;
+    font-weight: normal;
+}
+.tomb-foot-logo, .origins-foot-logo{
+    max-width: 120px;
+    width: 100%;
+    height: auto;
+    padding-left: 10px;
+}
+#copyright{
+    background-color: #060606;
+    padding: 30px;
+} 
+.aco-bio{
+    position: absolute;
+    top: 17em;
+    width: 94%;
+    display: flex;
+    justify-content: flex-end;
+}
+.aco-bio p{
+    letter-spacing: 2px;
+    font-size: 1em;
+    padding: 27px;
+    text-shadow: 0px -3px 20px rgba(0, 0, 0, 1);
+    width: 314px;
+    background: rgba( 17, 29, 49, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5.5px );
+    -webkit-backdrop-filter: blur( 5.5px );
+    border-radius: 10px;
+    text-align: justify;
+}
+#resultaco{
+    position: absolute;
+    top: 27em;
+    line-height: 2px;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    width: 94%;
+    display: flex;
+    justify-content: flex-end;
+}
+.origins h2, .farcry h2{
+    font-size: 2em;
+    letter-spacing: 3px;
+    text-align: center;
+    max-width: 77%;
+}
+.witcher h2, .uncharted h2, .tomclancy h2 {
+    font-size: 2em;
+    letter-spacing: 2px;
+    text-align: center;
+    max-width: 80%;
+}
+#resultfc{
+    width: 18%;
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    top: 26em;
+    line-height: 2px;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    text-shadow: 0px -3px 20px rgba(0, 0, 0, 1);
+    font-weight: normal;
+}
+.fc-bio{
+    position: absolute;
+    top: 14em;
+    width: 31%;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 auto;
+}
+.fc-bio p{
+    letter-spacing: 2px;
+    font-size: 1em;
+    padding: 27px;
+    text-shadow: 0px -3px 20px rgba(0, 0, 0, 1);
+    width: 287px;
+    background: rgba( 17, 29, 49, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5.5px );
+    -webkit-backdrop-filter: blur( 5.5px );
+    border-radius: 10px;
+    text-align: justify;
+}
+.witcher-bio{
+    position: absolute;
+    top: 14em;
+    width: 31%;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 auto;
+}
+.witcher-bio p{
+    letter-spacing: 2px;
+    font-size: 1em;
+    padding: 27px;
+    text-shadow: 0px -3px 20px rgba(0, 0, 0, 1);
+    width: 325px;
+    background: rgba( 17, 29, 49, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5.5px );
+    -webkit-backdrop-filter: blur( 5.5px );
+    border-radius: 10px;
+    text-align: justify;
+}
+#resultwitch{
+    width: 15%;
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    top: 26em;
+    line-height: 2px;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    text-shadow: 0px -3px 20px rgba(0, 0, 0, 1);
+    font-weight: normal;
+}
+.list-disc-witcher p {
+    font-size: 1.1em;
+    margin-top: 0;
+    font-weight: normal;
+    padding-left: 20px;
+    letter-spacing: 0px;
+}
+.uncharted-bio{
+    position: absolute;
+    top: 14em;
+    width: 31%;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 auto;
+}
+.uncharted-bio p{
+    letter-spacing: 2px;
+    font-size: 1em;
+    padding: 27px;
+    text-shadow: 0px -3px 20px rgba(0, 0, 0, 1);
+    width: 289px;
+    background: rgba( 17, 29, 49, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5.5px );
+    -webkit-backdrop-filter: blur( 5.5px );
+    border-radius: 10px;
+    text-align: justify;
+}
+#resultuncharted{
+    width: 23%;
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    top: 28em;
+    line-height: 2px;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    text-shadow: 0px -3px 20px rgba(0, 0, 0, 1);
+    font-weight: normal;
+}
+.tomclancy-bio{
+    position: absolute;
+    top: 16em;
+    width: 35%;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 auto;
+}
+.tomclancy-bio p{
+    letter-spacing: 1px;
+    font-size: 1em;
+    padding: 27px;
+    text-shadow: 0px -3px 20px rgba(0, 0, 0, 1);
+    width: 350px;
+    background: rgba( 17, 29, 49, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5.5px );
+    -webkit-backdrop-filter: blur( 5.5px );
+    border-radius: 10px;
+    text-align: justify;
+}
+#resultTomClancy{
+    width: 21%;
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    top: 28em;
+    line-height: 2px;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    text-shadow: 0px -3px 20px rgba(0, 0, 0, 1);
+    font-weight: normal;
+}
+
+@media screen and (max-width: 1290px) and (min-width: 1024px) {
+    .tomb-bio{
+        position: absolute;
+        top: 15em;
+        width: 35%; 
+    }
+    .tomb-bio p{
+        width: 15em;
+    }
+    #result-tomb{
+        top: 22em;
+    }
+    .tomb-heading h3{
+        font-size: 2.5em;
+        margin-top: 50px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .tomb-bio{
+        position: relative;
+        top: 0.5em;
+        width: 72%;
+    }
+    .tomb-bio p{
+        width: 35em;
+        padding: 10px;
+        font-size: 1em;
+        letter-spacing: 2px;
+    }
+    #result-tomb{
+        width: 45%;
+        font-size: 1em;
+        letter-spacing: 2px;
+        top: 0.5em;
+        position: relative;
+    }
+    .tomb-heading h3{
+        font-size: 2em;
+        width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 1290px) and (min-width: 1024px) {
+    .aco-heading h3{
+        font-size: 2.5em;
+        margin-top: 50px;
+    }
+    .aco-bio{
+        position: absolute;
+        top: 12em;
+        width: 95%;
+    }
+    .aco-bio p{
+        width: 314px;
+    }
+    #resultaco{
+        top: 22em;
+    }
+  }
+  
+  @media screen and (max-width: 768px){
+    .aco-heading h3{
+        font-size: 2em;
+        margin-top: 20px;
+        width: 80%;
+    }
+    .aco-bio{
+        position: relative;
+        top: 0.5em;
+        margin: 0 auto;
+    }
+    .aco-bio p{
+        width: 100%;
+        padding: 23px;
+        font-size: 1.1em;
+        letter-spacing: 1px;
+    }
+    #resultaco{
+        top: 0em;
+        font-size: 1em;
+        position: relative;
+    }
+  }
+  @media screen and (max-width: 1290px) and (min-width: 1024px) {
+    .fc-heading h3{
+        font-size: 3em;
+        width: 50%;
+    }
+    .fc-bio{
+        position: absolute;
+        top: 14em;
+        width: 42%;
+    }
+    .fc-bio p{
+        width: 320px;
+        font-size: 1em;
+        letter-spacing: 0px;
+    }
+    #resultfc{
+        top: 22em;
+    }
+  }
+  @media screen and (max-width: 768px){
+    .fc-heading h3{
+        font-size: 3em;
+        width: 50%;
+        position: absolute;
+    }
+    .fc-bio{
+        position: relative;
+        top: 0em;
+        width: 77%;
+    }
+    .fc-bio p{
+        width: 526px;
+        font-size: 1em;
+        letter-spacing: 1px;
+    }
+    #resultfc{
+        top: 0em;
+        width: 88%;
+        font-size: 1em;
+        position: relative;
+    }
+  }   
+  @media screen and (max-width: 1290px) and (min-width: 1024px) {
+    .witcher-heading h3{
+        font-size: 3em;
+        width: 50%;
+        line-height: 1;
+        margin-top: 20px;
+    }
+    .witcher-bio{
+        position: absolute;
+        top: 15em;
+        width: 43%;
+    }
+    .witcher-bio p{
+        letter-spacing: 1px;
+        font-size: 1em;
+        padding: 20px;
+        width: 360px;
+    }
+    #resultwitch{
+        width: 18%;
+        position: absolute;
+        top: 22em;
+    }
+  }
+  
+  @media screen and (max-width: 768px){
+    .witcher-heading h3{
+        font-size: 3em;
+        width: 50%;
+        line-height: 1;
+        margin-top: 20px;
+    }
+    .witcher-bio{
+        position: relative;
+        top: 1em;
+        width: 80%;
+    }
+    .witcher-bio p{
+        letter-spacing: 1px;
+        font-size: 1em;
+        padding: 12px;
+        width: 598px;
+        text-align: justify;
+    }
+    #resultwitch{
+        width: 86%;
+        position: relative;
+        top: 1em;
+        left: 24px;
+        font-size: 1em;
+    }
+  }
+  @media screen and (max-width: 1290px) and (min-width: 1024px) {
+    .uncharted-heading h3{
+        font-size: 3em;
+        width: 59%;
+        line-height: 1.16;
+        margin-top: 20px;
+    }
+    .uncharted-bio{
+        top: 11em;
+        width: 38%;
+    }
+    .uncharted-bio p{
+        letter-spacing: 1px;
+        font-size: 1em;
+        padding: 16px;
+        width: 318px;
+    }
+    #resultuncharted{
+        width: 25%;
+        top: 21em;
+    }
+  }
+  @media screen and (max-width: 768px){
+    .uncharted-heading h3{
+        font-size: 3em;
+        width: 100%;
+        line-height: 1.16;
+        margin-top: 20px;
+    }
+    .uncharted-bio{
+        top: 2em;
+        width: 80%;
+        position: relative;
+    }
+    .uncharted-bio p{
+        letter-spacing: 1px;
+        font-size: 1em;
+        padding: 16px;
+        width: 577px;
+    }
+    #resultuncharted{
+        width: 90%;
+        top: 1em;
+        position: relative;
+    }
+  }
+  @media screen and (max-width: 1290px) and (min-width: 1024px) {
+    .tomclancy-heading h3{
+        font-size: 3em;
+        width: 100%;
+        margin-top: 40px;
+    }
+    .tomclancy-bio{
+        top: 18em;
+        width: 41%;
+    }
+    .tomclancy-bio p{
+        letter-spacing: 1px;
+        font-size: 0.9em;
+        padding: 18px;
+        width: 350px;
+    }
+    #resultTomClancy{
+        width: 24%;
+        top: 26em;
+        font-size: 1.2em;
+        letter-spacing: 1px;
+    }
+  }
+  @media screen and (max-width: 768px){
+    .tomclancy-heading h3{
+        font-size: 3em;
+        width: 100%;
+        margin-top: 70px;
+    }
+    .tomclancy-bio{
+        top: 2em;
+        width: 81%;
+        position: relative;
+    }
+    .tomclancy-bio p{
+        letter-spacing: 2px;
+        font-size: 1em;
+        padding: 18px;
+        width: 580px;
+    }
+    #resultTomClancy{
+        width: 90%;
+        top: 1em;
+        font-size: 1.2em;
+        letter-spacing: 1px;
+        position: relative;
+    }
+  }
+
+
+
+  .reloadBtn {
+    align-items: center;
+    background-image: linear-gradient(144deg,#c1121f, #5B42F3 50%,#03045e);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    line-height: 1em;
+    max-width: 100%;
+    min-width: 140px;
+    padding: 3px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+  
+  .reloadBtn:active,
+  .reloadBtn:hover {
+    outline: 0;
+  }
+  
+  .reloadBtn span {
+    background-color: rgb(5, 6, 45);
+    padding: 8px 24px;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: 300ms;
+  }
+  
+  .reloadBtn:hover span {
+    background: none;
+  }
+  
+ 
